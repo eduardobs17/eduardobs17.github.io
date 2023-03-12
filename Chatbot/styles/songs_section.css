@@ -1,0 +1,29 @@
+.songs_div {
+ margin-left: calc(var(--padding_x) + var(--text_arrow_width));
+ margin-right: calc(var(--padding_x) + var(--text_arrow_width));
+ max-width: calc(100% - 2 * var(--padding_x) - 2 * var(--text_arrow_width));
+ width: 380px;
+}
+
+.songs_div .audio_row {
+ background-color: #EEF1FF;
+ border-radius: 0 10px 10px 10px;
+ margin-bottom: 10px;
+ padding: 10px;
+ position: relative;
+ width: fit-content;
+}
+
+.songs_div .audio_row::after {
+ border-bottom: 25px solid transparent;
+ border-right: var(--text_arrow_width) solid #EEF1FF;
+ content: '';
+ right: 100%;
+ position: absolute;
+ top: 0;
+}
+
+.songs_div .audio_row p {
+ font-size: 15px;
+ margin: 0 0 5px 15px;
+}

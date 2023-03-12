@@ -1,0 +1,29 @@
+button {
+ background-color: #E1E1E1;
+ border: 1px solid #000;
+ border-radius: 10px;
+ cursor: pointer;
+ color: #000;
+}
+
+button:disabled {
+ color: #000;
+ opacity: 0.2;
+ pointer-events: none;
+}
+
+button:hover {
+ opacity: 0.5;
+}
+
+button#start_button {
+ height: 30px;
+ width: 75px;
+}
+
+.options button.option_button {
+ height: 50px;
+ margin-bottom: 10px;
+ padding: 3px;
+ width: 175px;
+}

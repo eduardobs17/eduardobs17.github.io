@@ -1,0 +1,42 @@
+.images_container {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+ margin-left: calc(var(--padding_x) + var(--text_arrow_width));
+ margin-right: calc(var(--padding_x) + var(--text_arrow_width));
+ max-width: calc(100% - 2 * var(--padding_x) - 2 * var(--text_arrow_width));
+ width: 380px;
+}
+
+.images_container .image {
+ border-radius: 25px;
+ cursor: pointer;
+ height: 180px;
+ margin: 0 5px 10px 0;
+ object-fit: cover;
+ width: 180px;
+}
+
+.images_container .image:hover {
+ height: 185px;
+ opacity: 0.9;
+ width: 185px;
+}
+
+.fs_background {
+ align-items: center;
+ background-color: rgba(238, 241, 255, 0.9);
+ display: flex;
+ height: 100%;
+ left: 0;
+ justify-content: center;
+ margin: 0;
+ position: absolute;
+ top: 0;
+ width: 100%;
+}
+
+.fs_background .image_on_fs {
+ max-height: 95vh;
+ max-width: 95%;
+}
